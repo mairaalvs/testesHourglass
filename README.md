@@ -30,4 +30,4 @@ Todas as tags podem ser configuradas na classe da suíte de testes.
 
 Após a execução basta entrar no link gerado no terminal que o relatório será aberto no navegador.
 
-<p align="center"><img src="/teste_hourglass/assets/relatorio_testes.PNG" alt="Relatorio de Testes"
+<p align="center"> <img src="/teste_hourglass/assets/relatorio_testes.PNG" alt="Relatorio de Testes" /> </p>
