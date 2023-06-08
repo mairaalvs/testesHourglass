@@ -1,0 +1,825 @@
+23:05:28.901 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:05:29.808 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+23:05:30.255 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://hourglass-api.azurewebsites.net/api/v1/auth/resend-email-confirmation?email=mairaalves%40gec.inatel.br
+1 > Host: hourglass-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:05:31.264 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 993
+1 < 200
+1 < Content-Type: text/plain; charset=utf-8
+1 < Date: Thu, 08 Jun 2023 02:05:31 GMT
+1 < Server: Microsoft-IIS/10.0
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Request-Context: appId=cid-v1:04475a89-e763-412b-a122-cff73a38d12b
+1 < X-Powered-By: ASP.NET
+1 < Set-Cookie: ARRAffinity=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+1 < Set-Cookie: ARRAffinitySameSite=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+Email sent successfully
+23:05:31.703 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:hourglass/hourglass.feature
+23:13:03.843 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:13:03.849 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1686190383848
+23:13:04.712 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+23:13:04.712 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+23:13:05.125 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://hourglass-api.azurewebsites.net/api/v1/auth/resend-email-confirmation?email=mairaalves%40gec.inatel.br
+1 > Host: hourglass-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:13:05.126 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://hourglass-api.azurewebsites.net/api/v1/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 61
+1 > Host: hourglass-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15)
+1 > Accept-Encoding: gzip,deflate
+{"password":"Senhanova4@","email":"mairaalves@gec.inatel.br"}
+
+23:13:06.228 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 1093
+1 < 200
+1 < Content-Type: text/plain; charset=utf-8
+1 < Date: Thu, 08 Jun 2023 02:13:05 GMT
+1 < Server: Microsoft-IIS/10.0
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Request-Context: appId=cid-v1:04475a89-e763-412b-a122-cff73a38d12b
+1 < X-Powered-By: ASP.NET
+1 < Set-Cookie: ARRAffinity=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+1 < Set-Cookie: ARRAffinitySameSite=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+Email sent successfully
+23:13:06.756 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 1630
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 08 Jun 2023 02:13:05 GMT
+1 < Server: Microsoft-IIS/10.0
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Request-Context: appId=cid-v1:04475a89-e763-412b-a122-cff73a38d12b
+1 < X-Powered-By: ASP.NET
+1 < Set-Cookie: ARRAffinity=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+1 < Set-Cookie: ARRAffinitySameSite=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+{"errorMessage":null,"isAuthSuccessful":true,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoibWFpcmFhbHZlc0BnZWMuaW5hdGVsLmJyIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiVXNlciIsImV4cCI6MTY4NjI3Njc4NiwiaXNzIjoiaHR0cHM6Ly9ob3VyZ2xhc3MtYXBpLmF6dXJld2Vic2l0ZXMubmV0IiwiYXVkIjoiaHR0cHM6Ly9ob3VyZ2xhc3MtYXBpLmF6dXJld2Vic2l0ZXMubmV0In0.0rWWxhqJ3oU3ccx1kg2trHRkjEgCC60QG_-GunTwjjs"}
+23:13:07.214 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:hourglass/hourglass.feature
+23:22:48.847 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:22:48.851 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1686190968850
+23:22:49.587 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+23:22:49.587 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+23:22:49.587 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+23:22:49.951 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://hourglass-api.azurewebsites.net/api/v1/auth/resend-email-confirmation?email=mairaalves%40gec.inatel.br
+1 > Host: hourglass-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:22:49.951 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://hourglass-api.azurewebsites.net/api/v1/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 61
+1 > Host: hourglass-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15)
+1 > Accept-Encoding: gzip,deflate
+{"password":"Senhanova4@","email":"mairaalves@gec.inatel.br"}
+
+23:22:49.951 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > POST https://hourglass-api.azurewebsites.net/api/v1/auth/registration
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 129
+1 > Host: hourglass-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15)
+1 > Accept-Encoding: gzip,deflate
+{"password":"SenhaJoa0#","name":"Joao Alves","cpf":"384.167.811-41","confirmPassword":"SenhaJoa0#","email":"joaoalves@gmail.com"}
+
+23:22:50.924 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 969
+1 < 200
+1 < Content-Type: text/plain; charset=utf-8
+1 < Date: Thu, 08 Jun 2023 02:22:50 GMT
+1 < Server: Microsoft-IIS/10.0
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Request-Context: appId=cid-v1:04475a89-e763-412b-a122-cff73a38d12b
+1 < X-Powered-By: ASP.NET
+1 < Set-Cookie: ARRAffinity=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+1 < Set-Cookie: ARRAffinitySameSite=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+Email sent successfully
+23:22:52.095 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 2143
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 08 Jun 2023 02:22:51 GMT
+1 < Server: Microsoft-IIS/10.0
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Request-Context: appId=cid-v1:04475a89-e763-412b-a122-cff73a38d12b
+1 < X-Powered-By: ASP.NET
+1 < Set-Cookie: ARRAffinity=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+1 < Set-Cookie: ARRAffinitySameSite=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+{"errorMessage":null,"isAuthSuccessful":true,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoibWFpcmFhbHZlc0BnZWMuaW5hdGVsLmJyIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiVXNlciIsImV4cCI6MTY4NjI3NzM3MSwiaXNzIjoiaHR0cHM6Ly9ob3VyZ2xhc3MtYXBpLmF6dXJld2Vic2l0ZXMubmV0IiwiYXVkIjoiaHR0cHM6Ly9ob3VyZ2xhc3MtYXBpLmF6dXJld2Vic2l0ZXMubmV0In0.sIuESvbvqssgy--T-MA7-ieOhe4xN6Xw3rf4VlAI_Xc"}
+23:22:52.345 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 2394
+1 < 201
+1 < Content-Type: text/plain; charset=utf-8
+1 < Date: Thu, 08 Jun 2023 02:22:51 GMT
+1 < Server: Microsoft-IIS/10.0
+1 < Transfer-Encoding: chunked
+1 < Request-Context: appId=cid-v1:04475a89-e763-412b-a122-cff73a38d12b
+1 < X-Powered-By: ASP.NET
+1 < Set-Cookie: ARRAffinity=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+1 < Set-Cookie: ARRAffinitySameSite=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+User created & email sent to joaoalves@gmail.com successfully
+23:22:52.349 [pool-1-thread-3] INFO  com.intuit.karate - [print] User created & email sent to joaoalves@gmail.com successfully 
+23:22:52.825 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:hourglass/hourglass.feature
+23:25:42.836 [main] ERROR com.intuit.karate.core.FeatureParser - not a valid feature file: hourglass/hourglass.feature - mismatched input '/' expecting <EOF>
+23:25:55.925 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:25:55.928 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1686191155928
+23:25:56.741 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+23:25:56.741 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+23:25:56.741 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+23:25:56.741 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+23:25:57.109 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://hourglass-api.azurewebsites.net/api/v1/auth/resend-email-confirmation?email=mairaalves%40gec.inatel.br
+1 > Host: hourglass-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:25:57.110 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://hourglass-api.azurewebsites.net/api/v1/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 61
+1 > Host: hourglass-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15)
+1 > Accept-Encoding: gzip,deflate
+{"password":"Senhanova4@","email":"mairaalves@gec.inatel.br"}
+
+23:25:57.110 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > POST https://hourglass-api.azurewebsites.net/api/v1/auth/registration
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 129
+1 > Host: hourglass-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15)
+1 > Accept-Encoding: gzip,deflate
+{"password":"SenhaJoa0#","name":"Joao Alves","cpf":"384.167.811-41","confirmPassword":"SenhaJoa0#","email":"joaoalves@gmail.com"}
+
+23:25:57.110 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > POST https://hourglass-api.azurewebsites.net/api/v1/auth/registration
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 129
+1 > Host: hourglass-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15)
+1 > Accept-Encoding: gzip,deflate
+{"password":"SenhaJoa0#","name":"Joao Alves","cpf":"384.167.811-41","confirmPassword":"SenhaJoa0#","email":"joaoalves@gmail.com"}
+
+23:25:58.042 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 928
+1 < 403
+1 < Content-Type: text/plain; charset=utf-8
+1 < Date: Thu, 08 Jun 2023 02:25:57 GMT
+1 < Server: Microsoft-IIS/10.0
+1 < Transfer-Encoding: chunked
+1 < Request-Context: appId=cid-v1:04475a89-e763-412b-a122-cff73a38d12b
+1 < X-Powered-By: ASP.NET
+1 < Set-Cookie: ARRAffinity=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+1 < Set-Cookie: ARRAffinitySameSite=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+User already exists!
+23:25:58.042 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 926
+1 < 403
+1 < Content-Type: text/plain; charset=utf-8
+1 < Date: Thu, 08 Jun 2023 02:25:57 GMT
+1 < Server: Microsoft-IIS/10.0
+1 < Transfer-Encoding: chunked
+1 < Request-Context: appId=cid-v1:04475a89-e763-412b-a122-cff73a38d12b
+1 < X-Powered-By: ASP.NET
+1 < Set-Cookie: ARRAffinity=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+1 < Set-Cookie: ARRAffinitySameSite=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+User already exists!
+23:25:58.046 [pool-1-thread-3] ERROR com.intuit.karate - classpath:hourglass/hourglass.feature:43
+Then status 201
+status code was: 403, expected: 201, response time in milliseconds: 928, url: https://hourglass-api.azurewebsites.net/api/v1/auth/registration, response: 
+User already exists!
+classpath:hourglass/hourglass.feature:43
+23:25:58.048 [pool-1-thread-4] INFO  com.intuit.karate - [print] User already exists! 
+23:25:58.092 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 983
+1 < 200
+1 < Content-Type: text/plain; charset=utf-8
+1 < Date: Thu, 08 Jun 2023 02:25:57 GMT
+1 < Server: Microsoft-IIS/10.0
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Request-Context: appId=cid-v1:04475a89-e763-412b-a122-cff73a38d12b
+1 < X-Powered-By: ASP.NET
+1 < Set-Cookie: ARRAffinity=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+1 < Set-Cookie: ARRAffinitySameSite=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+Email sent successfully
+23:25:58.741 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 1631
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 08 Jun 2023 02:25:57 GMT
+1 < Server: Microsoft-IIS/10.0
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Request-Context: appId=cid-v1:04475a89-e763-412b-a122-cff73a38d12b
+1 < X-Powered-By: ASP.NET
+1 < Set-Cookie: ARRAffinity=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+1 < Set-Cookie: ARRAffinitySameSite=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+{"errorMessage":null,"isAuthSuccessful":true,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoibWFpcmFhbHZlc0BnZWMuaW5hdGVsLmJyIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiVXNlciIsImV4cCI6MTY4NjI3NzU1OCwiaXNzIjoiaHR0cHM6Ly9ob3VyZ2xhc3MtYXBpLmF6dXJld2Vic2l0ZXMubmV0IiwiYXVkIjoiaHR0cHM6Ly9ob3VyZ2xhc3MtYXBpLmF6dXJld2Vic2l0ZXMubmV0In0.q82D7YUK7kdpcI3HAFFTF9djK4tOHk-1ceCNUhi4eqk"}
+23:25:59.249 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) classpath:hourglass/hourglass.feature
+23:31:01.942 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:31:01.945 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1686191461945
+23:31:02.728 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+23:31:02.728 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+23:31:02.728 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+23:31:02.728 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+23:31:02.728 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+23:31:03.112 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://hourglass-api.azurewebsites.net/api/v1/auth/resend-email-confirmation?email=mairaalves%40gec.inatel.br
+1 > Host: hourglass-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:31:03.112 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > GET https://hourglass-api.azurewebsites.net/api/v1/services
+1 > Host: hourglass-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:31:03.113 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://hourglass-api.azurewebsites.net/api/v1/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 61
+1 > Host: hourglass-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15)
+1 > Accept-Encoding: gzip,deflate
+{"password":"Senhanova4@","email":"mairaalves@gec.inatel.br"}
+
+23:31:03.113 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > POST https://hourglass-api.azurewebsites.net/api/v1/auth/registration
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 129
+1 > Host: hourglass-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15)
+1 > Accept-Encoding: gzip,deflate
+{"password":"SenhaJoa0#","name":"Joao Alves","cpf":"384.167.811-41","confirmPassword":"SenhaJoa0#","email":"joaoalves@gmail.com"}
+
+23:31:03.113 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > POST https://hourglass-api.azurewebsites.net/api/v1/auth/registration
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 129
+1 > Host: hourglass-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15)
+1 > Accept-Encoding: gzip,deflate
+{"password":"SenhaJoa0#","name":"Joao Alves","cpf":"384.167.811-41","confirmPassword":"SenhaJoa0#","email":"joaoalves@gmail.com"}
+
+23:31:04.081 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 964
+1 < 403
+1 < Content-Type: text/plain; charset=utf-8
+1 < Date: Thu, 08 Jun 2023 02:31:03 GMT
+1 < Server: Microsoft-IIS/10.0
+1 < Transfer-Encoding: chunked
+1 < Request-Context: appId=cid-v1:04475a89-e763-412b-a122-cff73a38d12b
+1 < X-Powered-By: ASP.NET
+1 < Set-Cookie: ARRAffinity=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+1 < Set-Cookie: ARRAffinitySameSite=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+User already exists!
+23:31:04.084 [pool-1-thread-3] ERROR com.intuit.karate - classpath:hourglass/hourglass.feature:43
+Then status 201
+status code was: 403, expected: 201, response time in milliseconds: 964, url: https://hourglass-api.azurewebsites.net/api/v1/auth/registration, response: 
+User already exists!
+classpath:hourglass/hourglass.feature:43
+23:31:04.120 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 1007
+1 < 200
+1 < Content-Type: text/plain; charset=utf-8
+1 < Date: Thu, 08 Jun 2023 02:31:03 GMT
+1 < Server: Microsoft-IIS/10.0
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Request-Context: appId=cid-v1:04475a89-e763-412b-a122-cff73a38d12b
+1 < X-Powered-By: ASP.NET
+1 < Set-Cookie: ARRAffinity=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+1 < Set-Cookie: ARRAffinitySameSite=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+Email sent successfully
+23:31:04.575 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 1462
+1 < 403
+1 < Content-Type: text/plain; charset=utf-8
+1 < Date: Thu, 08 Jun 2023 02:31:03 GMT
+1 < Server: Microsoft-IIS/10.0
+1 < Transfer-Encoding: chunked
+1 < Request-Context: appId=cid-v1:04475a89-e763-412b-a122-cff73a38d12b
+1 < X-Powered-By: ASP.NET
+1 < Set-Cookie: ARRAffinity=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+1 < Set-Cookie: ARRAffinitySameSite=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+User already exists!
+23:31:04.584 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 1471
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 08 Jun 2023 02:31:03 GMT
+1 < Server: Microsoft-IIS/10.0
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Request-Context: appId=cid-v1:04475a89-e763-412b-a122-cff73a38d12b
+1 < X-Powered-By: ASP.NET
+1 < Set-Cookie: ARRAffinity=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+1 < Set-Cookie: ARRAffinitySameSite=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+[{"createdAt":"0001-01-01T00:00:00+00:00","price":114.3,"contactLink":null,"name":"Programador FullStack","description":"Faço qualquer site da sua escolha","id":"7b6f75de-4864-4a20-92ce-1d29f0c8b619","userName":"User admin","serviceCategory":"Programação","updatedAt":"0001-01-01T00:00:00+00:00"},{"createdAt":"2023-06-07T02:59:38.5775504+00:00","price":120,"contactLink":"https:\/\/api.whatsapp.com\/send?phone=5535998865716","name":"Pedreiro","description":"Meu serviço","id":"b62a2acd-3824-490b-80e6-28dc34a4d4bd","userName":"Pedro Oliveira","serviceCategory":"Others","updatedAt":"2023-06-07T03:16:36.2912225+00:00"},{"createdAt":"2023-06-07T02:40:15.8721149+00:00","price":20,"contactLink":"https:\/\/api.whatsapp.com\/send?phone=5535998865716","name":"Servente ","description":"Meu serviço","id":"29543794-1abc-46e6-94f2-dc8d3597a207","userName":"João","serviceCategory":"Others","updatedAt":"2023-06-07T02:46:42.7470916+00:00"}]
+23:31:05.124 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 2011
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 08 Jun 2023 02:31:04 GMT
+1 < Server: Microsoft-IIS/10.0
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Request-Context: appId=cid-v1:04475a89-e763-412b-a122-cff73a38d12b
+1 < X-Powered-By: ASP.NET
+1 < Set-Cookie: ARRAffinity=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+1 < Set-Cookie: ARRAffinitySameSite=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+{"errorMessage":null,"isAuthSuccessful":true,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoibWFpcmFhbHZlc0BnZWMuaW5hdGVsLmJyIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiVXNlciIsImV4cCI6MTY4NjI3Nzg2NCwiaXNzIjoiaHR0cHM6Ly9ob3VyZ2xhc3MtYXBpLmF6dXJld2Vic2l0ZXMubmV0IiwiYXVkIjoiaHR0cHM6Ly9ob3VyZ2xhc3MtYXBpLmF6dXJld2Vic2l0ZXMubmV0In0.NkJ3HxyNbO79oOhjHHHw5FDhqSU-RS26rTUycquL3yw"}
+23:31:05.674 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) classpath:hourglass/hourglass.feature
+23:33:18.815 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:33:18.823 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1686191598822
+23:33:19.677 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+23:33:19.677 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+23:33:19.677 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+23:33:19.677 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+23:33:19.677 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+23:33:20.089 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > GET https://hourglass-api.azurewebsites.net/api/v1/services
+1 > Host: hourglass-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:33:20.090 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://hourglass-api.azurewebsites.net/api/v1/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 61
+1 > Host: hourglass-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15)
+1 > Accept-Encoding: gzip,deflate
+{"password":"Senhanova4@","email":"mairaalves@gec.inatel.br"}
+
+23:33:20.090 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > POST https://hourglass-api.azurewebsites.net/api/v1/auth/registration
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 129
+1 > Host: hourglass-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15)
+1 > Accept-Encoding: gzip,deflate
+{"password":"SenhaJoa0#","name":"Joao Alves","cpf":"384.167.811-41","confirmPassword":"SenhaJoa0#","email":"joaoalves@gmail.com"}
+
+23:33:20.090 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > POST https://hourglass-api.azurewebsites.net/api/v1/auth/registration
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 129
+1 > Host: hourglass-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15)
+1 > Accept-Encoding: gzip,deflate
+{"password":"SenhaJoa0#","name":"Joao Alves","cpf":"384.167.811-41","confirmPassword":"SenhaJoa0#","email":"joaoalves@gmail.com"}
+
+23:33:20.090 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://hourglass-api.azurewebsites.net/api/v1/auth/resend-email-confirmation?email=mairaalves%40gec.inatel.br
+1 > Host: hourglass-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:33:20.978 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 881
+1 < 403
+1 < Content-Type: text/plain; charset=utf-8
+1 < Date: Thu, 08 Jun 2023 02:33:20 GMT
+1 < Server: Microsoft-IIS/10.0
+1 < Transfer-Encoding: chunked
+1 < Request-Context: appId=cid-v1:04475a89-e763-412b-a122-cff73a38d12b
+1 < X-Powered-By: ASP.NET
+1 < Set-Cookie: ARRAffinity=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+1 < Set-Cookie: ARRAffinitySameSite=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+User already exists!
+23:33:20.978 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 881
+1 < 403
+1 < Content-Type: text/plain; charset=utf-8
+1 < Date: Thu, 08 Jun 2023 02:33:20 GMT
+1 < Server: Microsoft-IIS/10.0
+1 < Transfer-Encoding: chunked
+1 < Request-Context: appId=cid-v1:04475a89-e763-412b-a122-cff73a38d12b
+1 < X-Powered-By: ASP.NET
+1 < Set-Cookie: ARRAffinity=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+1 < Set-Cookie: ARRAffinitySameSite=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+User already exists!
+23:33:20.978 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 884
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 08 Jun 2023 02:33:20 GMT
+1 < Server: Microsoft-IIS/10.0
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Request-Context: appId=cid-v1:04475a89-e763-412b-a122-cff73a38d12b
+1 < X-Powered-By: ASP.NET
+1 < Set-Cookie: ARRAffinity=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+1 < Set-Cookie: ARRAffinitySameSite=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+[{"createdAt":"0001-01-01T00:00:00+00:00","price":114.3,"contactLink":null,"name":"Programador FullStack","description":"Faço qualquer site da sua escolha","id":"7b6f75de-4864-4a20-92ce-1d29f0c8b619","userName":"User admin","serviceCategory":"Programação","updatedAt":"0001-01-01T00:00:00+00:00"},{"createdAt":"2023-06-07T02:59:38.5775504+00:00","price":120,"contactLink":"https:\/\/api.whatsapp.com\/send?phone=5535998865716","name":"Pedreiro","description":"Meu serviço","id":"b62a2acd-3824-490b-80e6-28dc34a4d4bd","userName":"Pedro Oliveira","serviceCategory":"Others","updatedAt":"2023-06-07T03:16:36.2912225+00:00"},{"createdAt":"2023-06-07T02:40:15.8721149+00:00","price":20,"contactLink":"https:\/\/api.whatsapp.com\/send?phone=5535998865716","name":"Servente ","description":"Meu serviço","id":"29543794-1abc-46e6-94f2-dc8d3597a207","userName":"João","serviceCategory":"Others","updatedAt":"2023-06-07T02:46:42.7470916+00:00"}]
+23:33:20.983 [pool-1-thread-3] ERROR com.intuit.karate - classpath:hourglass/hourglass.feature:43
+Then status 201
+status code was: 403, expected: 201, response time in milliseconds: 881, url: https://hourglass-api.azurewebsites.net/api/v1/auth/registration, response: 
+User already exists!
+classpath:hourglass/hourglass.feature:43
+23:33:21.517 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 1426
+1 < 200
+1 < Content-Type: text/plain; charset=utf-8
+1 < Date: Thu, 08 Jun 2023 02:33:20 GMT
+1 < Server: Microsoft-IIS/10.0
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Request-Context: appId=cid-v1:04475a89-e763-412b-a122-cff73a38d12b
+1 < X-Powered-By: ASP.NET
+1 < Set-Cookie: ARRAffinity=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+1 < Set-Cookie: ARRAffinitySameSite=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+Email sent successfully
+23:33:21.581 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 1491
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 08 Jun 2023 02:33:20 GMT
+1 < Server: Microsoft-IIS/10.0
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Request-Context: appId=cid-v1:04475a89-e763-412b-a122-cff73a38d12b
+1 < X-Powered-By: ASP.NET
+1 < Set-Cookie: ARRAffinity=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+1 < Set-Cookie: ARRAffinitySameSite=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+{"errorMessage":null,"isAuthSuccessful":true,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoibWFpcmFhbHZlc0BnZWMuaW5hdGVsLmJyIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiVXNlciIsImV4cCI6MTY4NjI3ODAwMSwiaXNzIjoiaHR0cHM6Ly9ob3VyZ2xhc3MtYXBpLmF6dXJld2Vic2l0ZXMubmV0IiwiYXVkIjoiaHR0cHM6Ly9ob3VyZ2xhc3MtYXBpLmF6dXJld2Vic2l0ZXMubmV0In0.pW7qYdiP_I6Ln3l3FAkBeZPsJls-Afk_5BtWY0PP_ng"}
+23:33:22.083 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) classpath:hourglass/hourglass.feature
+23:37:59.935 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:37:59.939 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1686191879939
+23:38:00.840 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+23:38:00.840 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+23:38:00.840 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+23:38:00.840 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+23:38:00.840 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+23:38:01.254 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://hourglass-api.azurewebsites.net/api/v1/auth/resend-email-confirmation?email=mairaalves%40gec.inatel.br
+1 > Host: hourglass-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:38:01.254 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > GET https://hourglass-api.azurewebsites.net/api/v1/services
+1 > Host: hourglass-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:38:01.255 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > POST https://hourglass-api.azurewebsites.net/api/v1/auth/registration
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 129
+1 > Host: hourglass-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15)
+1 > Accept-Encoding: gzip,deflate
+{"password":"SenhaJoa0#","name":"Joao Souza","cpf":"182.548.213-64","confirmPassword":"SenhaJoa0#","email":"joaosouza@gmail.com"}
+
+23:38:01.255 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://hourglass-api.azurewebsites.net/api/v1/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 61
+1 > Host: hourglass-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15)
+1 > Accept-Encoding: gzip,deflate
+{"password":"Senhanova4@","email":"mairaalves@gec.inatel.br"}
+
+23:38:01.255 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > POST https://hourglass-api.azurewebsites.net/api/v1/auth/registration
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 129
+1 > Host: hourglass-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15)
+1 > Accept-Encoding: gzip,deflate
+{"password":"SenhaJoa0#","name":"Joao Souza","cpf":"182.548.213-64","confirmPassword":"SenhaJoa0#","email":"joaosouza@gmail.com"}
+
+23:38:02.376 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 1112
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 08 Jun 2023 02:38:01 GMT
+1 < Server: Microsoft-IIS/10.0
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Request-Context: appId=cid-v1:04475a89-e763-412b-a122-cff73a38d12b
+1 < X-Powered-By: ASP.NET
+1 < Set-Cookie: ARRAffinity=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+1 < Set-Cookie: ARRAffinitySameSite=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+[{"createdAt":"0001-01-01T00:00:00+00:00","price":114.3,"contactLink":null,"name":"Programador FullStack","description":"Faço qualquer site da sua escolha","id":"7b6f75de-4864-4a20-92ce-1d29f0c8b619","userName":"User admin","serviceCategory":"Programação","updatedAt":"0001-01-01T00:00:00+00:00"},{"createdAt":"2023-06-07T02:59:38.5775504+00:00","price":120,"contactLink":"https:\/\/api.whatsapp.com\/send?phone=5535998865716","name":"Pedreiro","description":"Meu serviço","id":"b62a2acd-3824-490b-80e6-28dc34a4d4bd","userName":"Pedro Oliveira","serviceCategory":"Others","updatedAt":"2023-06-07T03:16:36.2912225+00:00"},{"createdAt":"2023-06-07T02:40:15.8721149+00:00","price":20,"contactLink":"https:\/\/api.whatsapp.com\/send?phone=5535998865716","name":"Servente ","description":"Meu serviço","id":"29543794-1abc-46e6-94f2-dc8d3597a207","userName":"João","serviceCategory":"Others","updatedAt":"2023-06-07T02:46:42.7470916+00:00"}]
+23:38:04.443 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 3187
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 08 Jun 2023 02:38:04 GMT
+1 < Server: Microsoft-IIS/10.0
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Request-Context: appId=cid-v1:04475a89-e763-412b-a122-cff73a38d12b
+1 < X-Powered-By: ASP.NET
+1 < Set-Cookie: ARRAffinity=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+1 < Set-Cookie: ARRAffinitySameSite=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+{"errorMessage":null,"isAuthSuccessful":true,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoibWFpcmFhbHZlc0BnZWMuaW5hdGVsLmJyIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiVXNlciIsImV4cCI6MTY4NjI3ODI4NCwiaXNzIjoiaHR0cHM6Ly9ob3VyZ2xhc3MtYXBpLmF6dXJld2Vic2l0ZXMubmV0IiwiYXVkIjoiaHR0cHM6Ly9ob3VyZ2xhc3MtYXBpLmF6dXJld2Vic2l0ZXMubmV0In0.bW3SHdtSbO4iMHWFqVeAbfzbASFft--mgy8FIoB0EIQ"}
+23:38:05.096 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 3841
+1 < 200
+1 < Content-Type: text/plain; charset=utf-8
+1 < Date: Thu, 08 Jun 2023 02:38:04 GMT
+1 < Server: Microsoft-IIS/10.0
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Request-Context: appId=cid-v1:04475a89-e763-412b-a122-cff73a38d12b
+1 < X-Powered-By: ASP.NET
+1 < Set-Cookie: ARRAffinity=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+1 < Set-Cookie: ARRAffinitySameSite=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+Email sent successfully
+23:38:05.111 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 3856
+1 < 400
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 08 Jun 2023 02:38:04 GMT
+1 < Server: Microsoft-IIS/10.0
+1 < Transfer-Encoding: chunked
+1 < Request-Context: appId=cid-v1:04475a89-e763-412b-a122-cff73a38d12b
+1 < X-Powered-By: ASP.NET
+1 < Set-Cookie: ARRAffinity=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+1 < Set-Cookie: ARRAffinitySameSite=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+{"isSuccessfulRegistration":false,"errors":["Username 'joaosouza@gmail.com' is already taken."]}
+23:38:05.112 [pool-1-thread-3] ERROR com.intuit.karate - classpath:hourglass/hourglass.feature:43
+Then status 201
+status code was: 400, expected: 201, response time in milliseconds: 3856, url: https://hourglass-api.azurewebsites.net/api/v1/auth/registration, response: 
+{"isSuccessfulRegistration":false,"errors":["Username 'joaosouza@gmail.com' is already taken."]}
+classpath:hourglass/hourglass.feature:43
+23:38:05.208 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 3953
+1 < 201
+1 < Content-Type: text/plain; charset=utf-8
+1 < Date: Thu, 08 Jun 2023 02:38:04 GMT
+1 < Server: Microsoft-IIS/10.0
+1 < Transfer-Encoding: chunked
+1 < Request-Context: appId=cid-v1:04475a89-e763-412b-a122-cff73a38d12b
+1 < X-Powered-By: ASP.NET
+1 < Set-Cookie: ARRAffinity=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+1 < Set-Cookie: ARRAffinitySameSite=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+User created & email sent to joaosouza@gmail.com successfully
+23:38:05.209 [pool-1-thread-4] ERROR com.intuit.karate - classpath:hourglass/hourglass.feature:65
+Then status 403
+status code was: 201, expected: 403, response time in milliseconds: 3953, url: https://hourglass-api.azurewebsites.net/api/v1/auth/registration, response: 
+User created & email sent to joaosouza@gmail.com successfully
+classpath:hourglass/hourglass.feature:65
+23:38:05.727 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) classpath:hourglass/hourglass.feature
+23:39:51.973 [main] ERROR com.intuit.karate.core.FeatureParser - not a valid feature file: hourglass/hourglass.feature - mismatched input '/' expecting <EOF>
+23:40:39.830 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:40:39.834 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1686192039833
+23:40:40.668 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+23:40:40.668 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+23:40:40.668 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+23:40:40.668 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+23:40:40.668 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+23:40:41.066 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://hourglass-api.azurewebsites.net/api/v1/auth/resend-email-confirmation?email=mairaalves%40gec.inatel.br
+1 > Host: hourglass-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:40:41.066 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > GET https://hourglass-api.azurewebsites.net/api/v1/services
+1 > Host: hourglass-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:40:41.066 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://hourglass-api.azurewebsites.net/api/v1/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 61
+1 > Host: hourglass-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15)
+1 > Accept-Encoding: gzip,deflate
+{"password":"Senhanova4@","email":"mairaalves@gec.inatel.br"}
+
+23:40:41.066 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > POST https://hourglass-api.azurewebsites.net/api/v1/auth/registration
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 129
+1 > Host: hourglass-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15)
+1 > Accept-Encoding: gzip,deflate
+{"password":"SenhaJoa0#","name":"Joao Souza","cpf":"182.548.213-64","confirmPassword":"SenhaJoa0#","email":"joaosouza@gmail.com"}
+
+23:40:41.066 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > POST https://hourglass-api.azurewebsites.net/api/v1/auth/registration
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 129
+1 > Host: hourglass-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15)
+1 > Accept-Encoding: gzip,deflate
+{"password":"SenhaJoa0#","name":"Joao Souza","cpf":"182.548.213-64","confirmPassword":"SenhaJoa0#","email":"joaosouza@gmail.com"}
+
+23:40:42.125 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 1053
+1 < 403
+1 < Content-Type: text/plain; charset=utf-8
+1 < Date: Thu, 08 Jun 2023 02:40:41 GMT
+1 < Server: Microsoft-IIS/10.0
+1 < Transfer-Encoding: chunked
+1 < Request-Context: appId=cid-v1:04475a89-e763-412b-a122-cff73a38d12b
+1 < X-Powered-By: ASP.NET
+1 < Set-Cookie: ARRAffinity=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+1 < Set-Cookie: ARRAffinitySameSite=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+User already exists!
+23:40:42.126 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 1056
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 08 Jun 2023 02:40:41 GMT
+1 < Server: Microsoft-IIS/10.0
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Request-Context: appId=cid-v1:04475a89-e763-412b-a122-cff73a38d12b
+1 < X-Powered-By: ASP.NET
+1 < Set-Cookie: ARRAffinity=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+1 < Set-Cookie: ARRAffinitySameSite=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+[{"createdAt":"0001-01-01T00:00:00+00:00","price":114.3,"contactLink":null,"name":"Programador FullStack","description":"Faço qualquer site da sua escolha","id":"7b6f75de-4864-4a20-92ce-1d29f0c8b619","userName":"User admin","serviceCategory":"Programação","updatedAt":"0001-01-01T00:00:00+00:00"},{"createdAt":"2023-06-07T02:59:38.5775504+00:00","price":120,"contactLink":"https:\/\/api.whatsapp.com\/send?phone=5535998865716","name":"Pedreiro","description":"Meu serviço","id":"b62a2acd-3824-490b-80e6-28dc34a4d4bd","userName":"Pedro Oliveira","serviceCategory":"Others","updatedAt":"2023-06-07T03:16:36.2912225+00:00"},{"createdAt":"2023-06-07T02:40:15.8721149+00:00","price":20,"contactLink":"https:\/\/api.whatsapp.com\/send?phone=5535998865716","name":"Servente ","description":"Meu serviço","id":"29543794-1abc-46e6-94f2-dc8d3597a207","userName":"João","serviceCategory":"Others","updatedAt":"2023-06-07T02:46:42.7470916+00:00"}]
+23:40:42.129 [pool-1-thread-3] ERROR com.intuit.karate - classpath:hourglass/hourglass.feature:43
+Then status 201
+status code was: 403, expected: 201, response time in milliseconds: 1053, url: https://hourglass-api.azurewebsites.net/api/v1/auth/registration, response: 
+User already exists!
+classpath:hourglass/hourglass.feature:43
+23:40:42.404 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 1338
+1 < 200
+1 < Content-Type: text/plain; charset=utf-8
+1 < Date: Thu, 08 Jun 2023 02:40:41 GMT
+1 < Server: Microsoft-IIS/10.0
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Request-Context: appId=cid-v1:04475a89-e763-412b-a122-cff73a38d12b
+1 < X-Powered-By: ASP.NET
+1 < Set-Cookie: ARRAffinity=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+1 < Set-Cookie: ARRAffinitySameSite=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+Email sent successfully
+23:40:42.654 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 1588
+1 < 403
+1 < Content-Type: text/plain; charset=utf-8
+1 < Date: Thu, 08 Jun 2023 02:40:41 GMT
+1 < Server: Microsoft-IIS/10.0
+1 < Transfer-Encoding: chunked
+1 < Request-Context: appId=cid-v1:04475a89-e763-412b-a122-cff73a38d12b
+1 < X-Powered-By: ASP.NET
+1 < Set-Cookie: ARRAffinity=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+1 < Set-Cookie: ARRAffinitySameSite=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+User already exists!
+23:40:42.774 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 1707
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 08 Jun 2023 02:40:41 GMT
+1 < Server: Microsoft-IIS/10.0
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Request-Context: appId=cid-v1:04475a89-e763-412b-a122-cff73a38d12b
+1 < X-Powered-By: ASP.NET
+1 < Set-Cookie: ARRAffinity=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+1 < Set-Cookie: ARRAffinitySameSite=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+{"errorMessage":null,"isAuthSuccessful":true,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoibWFpcmFhbHZlc0BnZWMuaW5hdGVsLmJyIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiVXNlciIsImV4cCI6MTY4NjI3ODQ0MiwiaXNzIjoiaHR0cHM6Ly9ob3VyZ2xhc3MtYXBpLmF6dXJld2Vic2l0ZXMubmV0IiwiYXVkIjoiaHR0cHM6Ly9ob3VyZ2xhc3MtYXBpLmF6dXJld2Vic2l0ZXMubmV0In0.Ds0ee16rnUVuJ4MWZBvKX8wjgSOwOlT0fmYDXt4l1a8"}
+23:40:43.276 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) classpath:hourglass/hourglass.feature
+23:41:51.539 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:41:51.543 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1686192111542
+23:41:52.271 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+23:41:52.271 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+23:41:52.271 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+23:41:52.271 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+23:41:52.271 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+23:41:52.637 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > GET https://hourglass-api.azurewebsites.net/api/v1/services
+1 > Host: hourglass-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:41:52.638 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > POST https://hourglass-api.azurewebsites.net/api/v1/auth/registration
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 129
+1 > Host: hourglass-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15)
+1 > Accept-Encoding: gzip,deflate
+{"password":"SenhaJoa0#","name":"Joao Souza","cpf":"182.548.213-64","confirmPassword":"SenhaJoa0#","email":"joaosouza@gmail.com"}
+
+23:41:52.638 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > POST https://hourglass-api.azurewebsites.net/api/v1/auth/registration
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 131
+1 > Host: hourglass-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15)
+1 > Accept-Encoding: gzip,deflate
+{"password":"SenhaJoa0#","name":"Joao Carlos","cpf":"773.153.686-63","confirmPassword":"SenhaJoa0#","email":"joaocarlos@gmail.com"}
+
+23:41:52.638 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://hourglass-api.azurewebsites.net/api/v1/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 61
+1 > Host: hourglass-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15)
+1 > Accept-Encoding: gzip,deflate
+{"password":"Senhanova4@","email":"mairaalves@gec.inatel.br"}
+
+23:41:52.638 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://hourglass-api.azurewebsites.net/api/v1/auth/resend-email-confirmation?email=mairaalves%40gec.inatel.br
+1 > Host: hourglass-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:41:54.588 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 1945
+1 < 403
+1 < Content-Type: text/plain; charset=utf-8
+1 < Date: Thu, 08 Jun 2023 02:41:53 GMT
+1 < Server: Microsoft-IIS/10.0
+1 < Transfer-Encoding: chunked
+1 < Request-Context: appId=cid-v1:04475a89-e763-412b-a122-cff73a38d12b
+1 < X-Powered-By: ASP.NET
+1 < Set-Cookie: ARRAffinity=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+1 < Set-Cookie: ARRAffinitySameSite=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+User already exists!
+23:41:54.588 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 1947
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 08 Jun 2023 02:41:53 GMT
+1 < Server: Microsoft-IIS/10.0
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Request-Context: appId=cid-v1:04475a89-e763-412b-a122-cff73a38d12b
+1 < X-Powered-By: ASP.NET
+1 < Set-Cookie: ARRAffinity=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+1 < Set-Cookie: ARRAffinitySameSite=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+[{"createdAt":"0001-01-01T00:00:00+00:00","price":114.3,"contactLink":null,"name":"Programador FullStack","description":"Faço qualquer site da sua escolha","id":"7b6f75de-4864-4a20-92ce-1d29f0c8b619","userName":"User admin","serviceCategory":"Programação","updatedAt":"0001-01-01T00:00:00+00:00"},{"createdAt":"2023-06-07T02:59:38.5775504+00:00","price":120,"contactLink":"https:\/\/api.whatsapp.com\/send?phone=5535998865716","name":"Pedreiro","description":"Meu serviço","id":"b62a2acd-3824-490b-80e6-28dc34a4d4bd","userName":"Pedro Oliveira","serviceCategory":"Others","updatedAt":"2023-06-07T03:16:36.2912225+00:00"},{"createdAt":"2023-06-07T02:40:15.8721149+00:00","price":20,"contactLink":"https:\/\/api.whatsapp.com\/send?phone=5535998865716","name":"Servente ","description":"Meu serviço","id":"29543794-1abc-46e6-94f2-dc8d3597a207","userName":"João","serviceCategory":"Others","updatedAt":"2023-06-07T02:46:42.7470916+00:00"}]
+23:41:54.603 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 1965
+1 < 200
+1 < Content-Type: text/plain; charset=utf-8
+1 < Date: Thu, 08 Jun 2023 02:41:53 GMT
+1 < Server: Microsoft-IIS/10.0
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Request-Context: appId=cid-v1:04475a89-e763-412b-a122-cff73a38d12b
+1 < X-Powered-By: ASP.NET
+1 < Set-Cookie: ARRAffinity=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+1 < Set-Cookie: ARRAffinitySameSite=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+Email sent successfully
+23:41:54.603 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 1965
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 08 Jun 2023 02:41:53 GMT
+1 < Server: Microsoft-IIS/10.0
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Request-Context: appId=cid-v1:04475a89-e763-412b-a122-cff73a38d12b
+1 < X-Powered-By: ASP.NET
+1 < Set-Cookie: ARRAffinity=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+1 < Set-Cookie: ARRAffinitySameSite=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+{"errorMessage":null,"isAuthSuccessful":true,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoibWFpcmFhbHZlc0BnZWMuaW5hdGVsLmJyIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiVXNlciIsImV4cCI6MTY4NjI3ODUxNCwiaXNzIjoiaHR0cHM6Ly9ob3VyZ2xhc3MtYXBpLmF6dXJld2Vic2l0ZXMubmV0IiwiYXVkIjoiaHR0cHM6Ly9ob3VyZ2xhc3MtYXBpLmF6dXJld2Vic2l0ZXMubmV0In0.Wak3P54C-0Nl-LcV_B9Yz8ND1DeNHTbQ5kkh--RBuzI"}
+23:41:55.444 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 2806
+1 < 201
+1 < Content-Type: text/plain; charset=utf-8
+1 < Date: Thu, 08 Jun 2023 02:41:55 GMT
+1 < Server: Microsoft-IIS/10.0
+1 < Transfer-Encoding: chunked
+1 < Request-Context: appId=cid-v1:04475a89-e763-412b-a122-cff73a38d12b
+1 < X-Powered-By: ASP.NET
+1 < Set-Cookie: ARRAffinity=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+1 < Set-Cookie: ARRAffinitySameSite=3552067f636606db50c561897c7e7998f83574d3bb2e6ad0115d9e821bf7d6a5; Domain=hourglass-api.azurewebsites.net; Secure
+User created & email sent to joaocarlos@gmail.com successfully
+23:41:55.446 [pool-1-thread-3] INFO  com.intuit.karate - [print] User created & email sent to joaocarlos@gmail.com successfully 
+23:41:55.922 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:hourglass/hourglass.feature

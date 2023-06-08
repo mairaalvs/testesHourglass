@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2},{"content":"pool-1-thread-3","id":3},{"content":"pool-1-thread-4","id":4},{"content":"pool-1-thread-5","id":5}];
+var items = [{"id":1,"group":1,"content":"hourglass\/hourglass[1:6]","start":1686192112229,"end":1686192114603,"title":"hourglass\/hourglass[1:6] 23:41:52.229-23:41:54.603 Testando retorno da API para uma confirmação de email"},{"id":2,"group":2,"content":"hourglass\/hourglass[2:12]","start":1686192112229,"end":1686192114604,"title":"hourglass\/hourglass[2:12] 23:41:52.229-23:41:54.604 Testando retorno da API para um login"},{"id":3,"group":3,"content":"hourglass\/hourglass[3:27]","start":1686192112229,"end":1686192115446,"title":"hourglass\/hourglass[3:27] 23:41:52.229-23:41:55.446 Testando retorno da API para um cadastro"},{"id":4,"group":4,"content":"hourglass\/hourglass[4:49]","start":1686192112229,"end":1686192114598,"title":"hourglass\/hourglass[4:49] 23:41:52.229-23:41:54.598 Testando retorno da API para um cadastro ja existente [caso negativo]"},{"id":5,"group":5,"content":"hourglass\/hourglass[5:70]","start":1686192112229,"end":1686192114601,"title":"hourglass\/hourglass[5:70] 23:41:52.229-23:41:54.601 Testando retorno da API para serviços cadastrados"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
